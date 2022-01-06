@@ -1,0 +1,208 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=106;
+	taxlabels
+	Aalat
+	Aauri
+	Acitr
+	Adigi
+	Adisc
+	Aequi
+	Ageleg
+	Aneleg
+	Aquee
+	AspL
+	Asulc
+	Atetr
+	Avanh
+	Bannu
+	Banti
+	Bcave
+	Bmexi
+	Btued
+	CamAT
+	CamGM
+	Cassiopeasp
+	Caust
+	Cbore
+	Cbras
+	Ccapi
+	Cconv
+	Ccrux
+	Cechi
+	Cflec
+	Cfusc
+	Cgig
+	Chemi
+	Clath
+	Cpoly
+	Crubr
+	Csowe
+	Ctele
+	Dleuc
+	Dline
+	Dmela
+	Ecavo
+	Ediph
+	Eflex
+	Elary
+	Eline
+	Eprol
+	Equad
+	Erubr
+	Etour
+	Everr
+	Fliza
+	Gvent
+	Hauri
+	Hdigi
+	Holig
+	Hpoly
+	Hprod
+	Hsanj
+	Hsymb
+	Hviri
+	Hvulg
+	Imade
+	Inoct
+	Kiwat
+	Leptog
+	Lgiga
+	Lnegl
+	Lquad
+	Lsarm
+	Lscut
+	Maure
+	Mcave
+	Mcere
+	Mdore
+	Mgrif
+	Mleid
+	Mmuri
+	Mpend
+	Mseni
+	Nbiju
+	Nephthyigorgiasp
+	Nvect
+	Paste
+	Pdami
+	Phomo
+	Phydr
+	Plcarn
+	Pmaua
+	Pocarn
+	Pphys
+	Pvari
+	Renill
+	Rindo
+	Ryuma
+	Scruc
+	Seleg
+	Shyst
+	Smele
+	Spurp
+	Tadha
+	Tcyst
+	Tgutt
+	Tkita
+	Tmusi
+	Tprod
+	Turritopsissp
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Aalat:0.114506,(((((Aauri:0.144183,(Smele:0.154552,Cassiopeasp:0.194299)[&label=100]:0.035712)[&label=100]:0.059745,(Cfusc:0.1277,Ccapi:0.25799)[&label=100]:0.049045)[&label=100]:0.134642,Avanh:0.251394)[&label=100]:0.048938,(((((((((((Adigi:0.13631,Paste:0.082038)[&label=100]:0.021529,((((Fliza:0.012184,Plcarn:0.013605)[&label=100]:0.015356,Mcave:0.022756)[&label=100]:0.020352,(Lscut:0.011584,Cechi:0.008387)[&label=100]:0.033832)[&label=100]:0.014639,(Maure:0.03829,(Pdami:0.044292,Shyst:0.039241)[&label=100]:0.033004)[&label=100]:0.027955)[&label=100]:0.023777)[&label=100]:0.03305,(Caust:0.07298,(Rindo:0.080063,Ryuma:0.08235)[&label=100]:0.014379)[&label=100]:0.039372)[&label=100]:0.120689,((((Adisc:0.051035,(Cpoly:0.04792,Hdigi:0.060886)[&label=100]:0.018869)[&label=100]:0.025824,((((Bannu:0.021877,Ediph:0.012567)[&label=100]:0.029058,(Banti:0.100772,(Lnegl:0.041111,Tprod:0.059872)[&label=100]:0.009238)[&label=100]:0.01123)[&label=100]:0.023169,(Hprod:0.025785,Seleg:0.028665)[&label=100]:0.026191)[&label=100]:0.015155,((Dleuc:0.044277,Dline:0.050151)[&label=100]:0.039177,Mseni:0.062039)[&label=100]:0.022906)[&label=100]:0.031888)[&label=100]:0.052884,((((Aequi:0.044551,(Asulc:0.035113,Aneleg:0.028976)[&label=100]:0.007301)[&label=100]:0.005029,(Bcave:0.028974,(Cgig:0.026262,Mdore:0.026983)[&label=100]:0.025189)[&label=100]:0.010558)[&label=100]:0.02528,(Mgrif:0.054253,Btued:0.055094)[&label=100]:0.037439)[&label=100]:0.016748,(Eprol:0.058702,Equad:0.05227)[&label=99]:0.013133)[&label=100]:0.04006)[&label=100]:0.081293,(Eline:0.084826,Nvect:0.118245)[&label=100]:0.073044)[&label=100]:0.089378)[&label=100]:0.029747,Pvari:0.226083)[&label=100]:0.081442,(((AspL:0.031377,Inoct:0.035331)[&label=100]:0.040475,Imade:0.053701)[&label=100]:0.056701,((Bmexi:0.058302,Cbras:0.050164)[&label=100]:0.030123,(((CamAT:0.003455,Cbore:0.004359)[&label=100]:0.059089,CamGM:0.072154)[&label=100]:0.029019,Pmaua:0.05852)[&label=91]:0.008586)[&label=100]:0.025306)[&label=100]:0.257874)[&label=100]:0.041638,((Crubr:0.106962,(((((Eflex:0.018692,((Etour:0.009787,Mmuri:0.009456)[&label=100]:0.003145,Phomo:0.023457)[&label=100]:0.002313)[&label=100]:0.059838,(((Gvent:0.042956,Leptog:0.044969)[&label=100]:0.008276,Lsarm:0.038212)[&label=100]:0.023177,(Ecavo:0.005242,Everr:0.005813)[&label=100]:0.036828)[&label=100]:0.014155)[&label=100]:0.011865,Nephthyigorgiasp:0.072482)[&label=100]:0.00855,(Erubr:0.070454,Scruc:0.06848)[&label=55]:0.00759)[&label=55]:0.010809,Tmusi:0.084452)[&label=100]:0.079668)[&label=100]:0.0399,Renill:0.218469)[&label=100]:0.28122)[&label=100]:0.073196,(((Aquee:0.82982,Mleid:1.075296)[&label=100,!rotate=true]:0.09644,Tadha:0.710057)[&label=100,!rotate=true]:0.067495,(((Ctele:0.40973,Lgiga:0.390236)[&label=100]:0.079018,Dmela:0.839542)[&label=100]:0.067479,(Spurp:0.484837,Tgutt:0.458368)[&label=84]:0.041181)[&label=100]:0.110633)[&label=100]:0.077536)[&label=100]:0.088443,(Phydr:0.942449,((Mcere:0.59425,(Mpend:0.42253,Tkita:0.542117)[&label=100]:0.15286)[&label=100]:0.585703,Kiwat:0.973515)[&label=100]:0.404169)[&label=100]:0.21093)[&label=100]:0.070112,(((((((Ageleg:0.068703,Nbiju:0.132665)[&label=100]:0.071084,(Clath:0.089292,Atetr:0.212784)[&label=100]:0.064672)[&label=100]:0.062588,Pphys:0.160975)[&label=100]:0.134676,(((Hpoly:0.01067,Hsymb:0.011232)[&label=100]:0.096723,Pocarn:0.093501)[&label=100]:0.086168,Turritopsissp:0.2306)[&label=100]:0.046446)[&label=97]:0.025787,Chemi:0.369768)[&label=100]:0.031806,(Elary:0.317625,((Hvulg:0.036962,Holig:0.048389)[&label=100]:0.073566,Hviri:0.08963)[&label=100]:0.161525)[&label=100]:0.137046)[&label=100]:0.089143,(Csowe:0.319638,Acitr:0.398455)[&label=100]:0.090013)[&label=100]:0.159243)[&label=99]:0.029185,((Hauri:0.034125,Hsanj:0.036591)[&label=100]:0.172958,((Cconv:0.152708,Ccrux:0.123036)[&label=100]:0.038722,Lquad:0.165162)[&label=100]:0.040803)[&label=100]:0.337611)[&label=100]:0.039431)[&label=100]:0.225739,Cflec:0.149572)[&label=100]:0.034702,Tcyst:0.31697);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="Arial";
+	set branchLabels.fontSize=12;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=426;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=376;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="Arial";
+	set nodeLabels.fontSize=12;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=12.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=16;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
