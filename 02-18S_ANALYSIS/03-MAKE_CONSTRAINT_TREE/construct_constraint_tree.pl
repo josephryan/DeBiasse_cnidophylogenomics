@@ -5,7 +5,7 @@ use warnings;
 use JFR::Fasta;
 use Data::Dumper;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 our $TRANSCRIPT_CSV = 'cnidophylo_names_abbrev.csv';
 our $SSRNA_FA = '../02-ALN/ssu.dir.eukarya.mask.stk.fa';
@@ -27,7 +27,6 @@ our %MANUAL = ('Cassiopeasp' => 'Cassiopea_frondosa_SC',
                'Lnegl' => 'Lebrunia_coralligens_HE',
                'Paste' => 'Porites_cylindrica_HE',
                'Plcarn' => 'Platygyra_daedalea_HE',
-               'Pmaua' => 'Pachycerianthus_borealis_CE',
                'Rindo' => 'Rhodactis_rhodostoma_HE',
                'Ryuma' => 'Ricordea_florida_HE',
                'Cbore' => 'Pachycerianthus_borealis_CE',
@@ -42,17 +41,18 @@ our %AMBIGUOUS = (
                   'Ccapi' => 'Cyanea_capillata_SC',
                   'Chemi' => 'Clytia_hemisphaerica_HY',
                   'Cpoly' => 'Calliactis_polypus_HE',
-                  'Crubr' => 'Corallium_rubrum_OC',
                   'Equad' => 'Entacmaea_quadricolor_HE',
                   'Maure' => 'Madracis_kirbyi_HE',
-                  'Pvari' => 'Protopalythoa_variabilis_HE',
+                  'Pvari' => 'Palythoa_variabilis_HE',
                   'Phydr' => 'Polypodium_hydriforme_PO',
                   'Seleg' => 'Sagartia_elegans_HE',
                   );
 
 # Hpoly represents Hydractinia polyclina which is not in our 18s set
 #     but Hpoly erroneously matches Hydra_polymorphus_HY
-our %SKIP = ('Hpoly' => 1);
+# Crubr represents Corallium rubrum which is not in our 18S set
+#     (existing sequences are 626 and 627bp
+our %SKIP = ('Hpoly' => 1, 'Crubr' => 1);
 
 # These are skipped because they were removed from the phylogenomics
 #     analysis because of low BUSCO scores or contamination
