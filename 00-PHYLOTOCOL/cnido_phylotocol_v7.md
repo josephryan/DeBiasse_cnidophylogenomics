@@ -89,7 +89,7 @@ diamond blastp -d BlastDB -q species.fa -o species_out.txt -e 0.001 -p [# of cor
 orthofinder -b [dir_w_blast_results] -a 16 -M msa -os > ofb.out 2> ofb.err
 ```
 
-#### 2.6 Generate single copy orthogroups using the script ```filter_ogs_write_scripts.pl``` (available in https://github.com/josephryan/RyanLabPhylogenomicTools). The script allows the user to define the minimum number of taxa and the maximum number of duplicates per taxon allowed per orthogroup (in this study XXX% (XXX taxa) and X duplicates) and after this filtering, automates the following steps:   
+#### 2.6 Generate single copy orthogroups using the script ```filter_ogs_write_scripts.pl``` (available in https://github.com/josephryan/RyanLabPhylogenomicTools). The script allows the user to define the minimum number of taxa and the maximum number of duplicates per taxon allowed per orthogroup (in this study 50% (56 of 112 taxa) and 8 paraphyletic duplicates) and after this filtering, automates the following steps:   
 
 2.6.1 sequences within each orthogroup are aligned using Mafft v7.309 
 
@@ -169,7 +169,8 @@ perl get_18S_fasta_from_genbank.pl 18s.cnidaria.genbank > 18s.fa
 
 2.10.3 align 18S sequences with ssu-align (Nawrocki and Eddy, 2013).
 
-```ssu-align -f 18s.fa ssu.dir > ssu-align.out 2> ssu-align.err
+```
+ssu-align -f 18s.fa ssu.dir > ssu-align.out 2> ssu-align.err
 ```
 
 2.10.4 remove positions with low posterior probability of positional homology as calculated by SSU-mask and convert stockholm to fasta (custom script that uses esl-reformat from HMMer)
@@ -185,7 +186,7 @@ stockholm2fasta.pl ssu.dir/ssu.dir.eukarya.mask.stk > ssu.dir/ssu.dir.eukarya.ma
 construct_constraint_tree.pl transcriptome.tre > transcriptome.constraint.tre
 ```
 
-2.10.6 unroot the constraint tree (I think iqtree balks at constraint tree unless tree is specifically unrooted; if not, than will skip)
+2.10.6 unroot the constraint tree (I think iqtree balks at constraint tree unless tree is specifically unrooted; if not, then will skip)
 
 ```
 unroot.R
